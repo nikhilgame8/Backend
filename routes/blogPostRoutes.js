@@ -5,5 +5,6 @@ const authenticateToken = require('../middlewares/authMiddleware');
 
 // Protected route (requires authentication)
 router.post('/', authenticateToken, blogPostController.createPost);
+router.get('/', blogPostController.getData);
 
 module.exports = router;

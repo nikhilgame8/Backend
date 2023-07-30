@@ -13,3 +13,7 @@ exports.createPost = async (req, res) => {
     res.status(500).json({ message: 'Failed to create the post' });
   }
 };
+
+exports.getData = async(req, res) => {
+    res.send("API is working");
+}
